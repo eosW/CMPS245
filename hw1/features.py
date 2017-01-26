@@ -1,0 +1,1 @@
+import csvfrom sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizerdef counting(infilename):    vectorized = CountVectorizer()    matrix = vectorized.fit_transform(open(infilename)).toarray()    return matrixdef tfidf(infilename):    vectorized = TfidfVectorizer()    matrix = vectorized.fit_transform(open(infilename)).toarray()    return matrix
