@@ -1,8 +1,9 @@
 import csv
 import re
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import TweetTokenizer
 
 def pre_processing(readfilename,writefileneme):
+    tknzr = TweetTokenizer()
     with open(readfilename) as infile, open(writefileneme,'wb') as outfile:
         reader = csv.reader(infile)
         writer = csv.writer(outfile)
@@ -12,7 +13,7 @@ def pre_processing(readfilename,writefileneme):
         no_link = (re.sub('(?:http|ftp|www)\S+','',tweet) for tweet in no_tag)
         no_at = (re.sub('@','',tweet) for tweet in no_link)
         no_hash = (re.sub('(?: #\S+)+$','',tweet) for tweet in no_at)
-        tokens = (word_tokenize(tweet.lower()) for tweet in no_hash)
+        tokens = (tknzr.tokenize(tweet.lower()) for tweet in no_hash)
         writer.writerows(tokens)
         outfile.flush()
 
