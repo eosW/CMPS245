@@ -6,9 +6,9 @@ from sklearn.decomposition import TruncatedSVD
 
 def feature1_unigram_extraction(source_file):
     #get the 1st feature
-    vectorized = CountVectorizer()
+    vectorized = CountVectorizer(min_df=200)
     matrix = vectorized.fit_transform(open(source_file))
-    return matrix
+    return matrix, vectorized.vocabulary_
     
 def feature2_unigram_tfidf_extraction(feature_one_vectors_matrix):
     
@@ -19,9 +19,9 @@ def feature2_unigram_tfidf_extraction(feature_one_vectors_matrix):
     return feature_one_tfidf_array
     
 def feature3_normal_tfidf_extraction(source_file):
-    feature_three_vectors_matrix = feature1_unigram_extraction(source_file)
+    feature_three_vectors_matrix,vocabulary = feature1_unigram_extraction(source_file)
     feature_three_tfidf_array = feature2_unigram_tfidf_extraction(feature_three_vectors_matrix)
-    return feature_three_tfidf_array
+    return feature_three_tfidf_array,vocabulary
     
 def feature4_lsi_extraction(feature_three_tfidf_array):
     svd = TruncatedSVD(n_components=100)
