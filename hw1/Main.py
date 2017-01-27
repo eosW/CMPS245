@@ -3,6 +3,7 @@ from feature_generation import feature1_unigram_extraction
 from feature_generation import feature2_unigram_tfidf_extraction
 from feature_generation import feature3_normal_tfidf_extraction
 from feature_generation import feature4_lsi_extraction
+from clustering import kmeans_clustering
 
 tag_nonormal = "no_normal"
 tag_normal = "normal"
@@ -65,6 +66,30 @@ normaltfidf_feature3_array_trump = feature3_normal_tfidf_extraction(data_normal_
 normaltfidf_feature3_array_clinton = feature3_normal_tfidf_extraction(data_normal_clinton)
 lsi_feature4_array_trump = feature4_lsi_extraction(normaltfidf_feature3_array_trump)
 lsi_feature4_array_clinton = feature4_lsi_extraction(normaltfidf_feature3_array_clinton)
+
+unigram_feature1_array_trump_predict_result = kmeans_clustering(unigram_feature1_array_trump)
+print len(unigram_feature1_array_trump_predict_result)
+
+unigram_feature1_array_clinton_predict_result = kmeans_clustering(unigram_feature1_array_clinton)
+print len(unigram_feature1_array_clinton_predict_result)
+
+unigramtfidf_feature2_array_trump_predict_result = kmeans_clustering(unigramtfidf_feature2_array_trump)
+print len(unigramtfidf_feature2_array_trump_predict_result)
+
+unigramtfidf_feature2_array_clinton_predict_result = kmeans_clustering(unigramtfidf_feature2_array_clinton)
+print len(unigramtfidf_feature2_array_clinton_predict_result)
+
+normaltfidf_feature3_array_trump_predict_result = kmeans_clustering(normaltfidf_feature3_array_trump)
+print len(normaltfidf_feature3_array_trump_predict_result)
+
+normaltfidf_feature3_array_clinton_predict_result = kmeans_clustering(normaltfidf_feature3_array_clinton)
+print len(normaltfidf_feature3_array_clinton_predict_result)
+
+lsi_feature4_array_trump_predict_result = kmeans_clustering(lsi_feature4_array_trump)
+print len(lsi_feature4_array_trump_predict_result)
+
+lsi_feature4_array_clinton_predict_result = kmeans_clustering(lsi_feature4_array_clinton)
+print len(lsi_feature4_array_clinton_predict_result)
 
 
 
