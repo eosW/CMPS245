@@ -1,0 +1,36 @@
+LDA K=3
+topic 0: 0.026*"rt" + 0.013*"people" + 0.010*"amp" + 0.009*"life" + 0.005*"women" + 0.005*"right" + 0.005*"will" + 0.004*"like" + 0.004*"baby" + 0.004*"babies"
+topic 1: 0.012*"rt" + 0.011*"abortion" + 0.010*"hillaryclinton" + 0.010*"amp" + 0.008*"planned" + 0.007*"will" + 0.007*"parenthood" + 0.006*"pact" + 0.005*"just" + 0.004*"get"
+topic 2: 0.012*"women" + 0.010*"amp" + 0.010*"rt" + 0.009*"will" + 0.009*"can" + 0.007*"u" + 0.007*"people" + 0.007*"just" + 0.006*"god" + 0.006*"know"
+
+LDA K=4
+topic 0: 0.015*"amp" + 0.014*"women" + 0.009*"hillaryclinton" + 0.009*"rt" + 0.008*"hillary" + 0.007*"men" + 0.006*"health" + 0.005*"like" + 0.005*"need" + 0.005*"care"
+topic 1: 0.014*"rt" + 0.012*"life" + 0.011*"will" + 0.011*"amp" + 0.009*"right" + 0.006*"human" + 0.006*"know" + 0.006*"us" + 0.005*"god" + 0.005*"just"
+topic 2: 0.018*"rt" + 0.017*"people" + 0.011*"will" + 0.011*"amp" + 0.007*"abortion" + 0.007*"god" + 0.007*"u" + 0.006*"can" + 0.006*"just" + 0.006*"like"
+topic 3: 0.022*"rt" + 0.011*"planned" + 0.010*"parenthood" + 0.007*"hillaryclinton" + 0.005*"abortion" + 0.005*"women" + 0.005*"pact" + 0.004*"people" + 0.004*"babies" + 0.004*"weeks"
+
+LDA K=5
+topic 0: 0.011*"rt" + 0.010*"amp" + 0.005*"debate" + 0.005*"will" + 0.005*"hillaryclinton" + 0.005*"now" + 0.004*"time" + 0.004*"right" + 0.004*"vs" + 0.004*"god"
+topic 1: 0.018*"rt" + 0.008*"body" + 0.008*"amp" + 0.007*"hillary" + 0.006*"us" + 0.006*"right" + 0.006*"still" + 0.006*"clinton" + 0.005*"weeks" + 0.005*"will"
+topic 2: 0.022*"women" + 0.021*"people" + 0.017*"amp" + 0.013*"abortion" + 0.010*"rt" + 0.009*"life" + 0.007*"just" + 0.006*"health" + 0.006*"men" + 0.005*"right"
+topic 3: 0.025*"rt" + 0.019*"will" + 0.010*"hillaryclinton" + 0.007*"amp" + 0.006*"just" + 0.006*"hillary" + 0.006*"god" + 0.006*"get" + 0.005*"us" + 0.005*"one"
+topic 4: 0.017*"rt" + 0.011*"u" + 0.011*"planned" + 0.010*"parenthood" + 0.009*"baby" + 0.007*"amp" + 0.005*"can" + 0.005*"hillaryclinton" + 0.005*"like" + 0.005*"just"
+
+BTM K=3
+topic 0: 0.019144*"rt" 0.014776*"god" 0.012332*"amp" 0.011605*"will" 0.009016*"u" 0.007061*"us" 0.006973*"life" 0.006909*"can" 0.006592*"know" 0.005272*"just"
+topic 1: 0.021292*"rt" 0.017290*"hillaryclinton" 0.013721*"hillary" 0.011028*"amp" 0.009687*"will" 0.007261*"clinton" 0.004879*"just" 0.004617*"us" 0.003949*"get" 0.003898*"like"
+topic 2: 0.014134*"amp" 0.013754*"rt" 0.012075*"women" 0.011399*"people" 0.009403*"abortion" 0.006062*"will" 0.005802*"just" 0.005484*"like" 0.005369*"life" 0.004862*"can"
+
+BTM K=4
+topic 0: 0.018376*"rt" 0.016221*"god" 0.012483*"amp" 0.012054*"will" 0.010172*"u" 0.007560*"life" 0.007328*"us" 0.007218*"can" 0.007042*"know" 0.005559*"vs"
+topic 1: 0.019611*"rt" 0.017729*"hillaryclinton" 0.013160*"hillary" 0.011574*"amp" 0.011210*"will" 0.006709*"clinton" 0.004934*"just" 0.004747*"us" 0.004540*"4" 0.004244*"get"
+topic 2: 0.025184*"rt" 0.012395*"amp" 0.005754*"hillary" 0.004534*"will" 0.004468*"hillaryclinton" 0.004368*"like" 0.004294*"just" 0.003287*"clinton" 0.003281*"us" 0.003194*"people"
+topic 3: 0.013971*"amp" 0.013612*"rt" 0.012501*"women" 0.011917*"people" 0.009725*"abortion" 0.005946*"just" 0.005791*"will" 0.005643*"life" 0.005473*"like" 0.005008*"can"
+
+BTM K=5
+topic 0: 0.018542*"rt" 0.017058*"god" 0.013259*"will" 0.013127*"amp" 0.010252*"u" 0.008315*"life" 0.008224*"us" 0.007472*"can" 0.007055*"know" 0.005785*"vs"
+topic 1: 0.022142*"rt" 0.018990*"hillaryclinton" 0.014204*"hillary" 0.011400*"amp" 0.011140*"will" 0.007544*"clinton" 0.005156*"us" 0.004647*"4" 0.003897*"just" 0.003872*"vote"
+topic 2: 0.014333*"rt" 0.013727*"like" 0.013349*"just" 0.013186*"women" 0.010162*"men" 0.007406*"get" 0.005635*"feminists" 0.005028*"think" 0.004738*"feminism" 0.004554*"can"
+topic 3: 0.024050*"rt" 0.020638*"amp" 0.003876*"religion" 0.003577*"aurlie" 0.003526*"us" 0.002732*"anti" 0.002578*"one" 0.002557*"sick" 0.002547*"islamic" 0.002536*"muslims"
+topic 4: 0.014679*"amp" 0.013407*"rt" 0.012539*"people" 0.011697*"women" 0.010580*"abortion" 0.006209*"will" 0.006049*"life" 0.005249*"just" 0.005183*"right" 0.005155*"planned"
+
